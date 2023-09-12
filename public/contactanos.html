@@ -1,0 +1,211 @@
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Título</title>
+    <title>Personal Portfolio Webpage</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<section>
+    <!--Contacto-->
+    <div class="fondo-contacto pagina-contacto">
+        <div class="caja-contacto">
+            <h2 id="contactanos">CONTÁCTANOS</h2>
+            <h2 id="envio_exitoso">ENVÍO <br> EXITOSO</h2>
+            <div class="contacto">
+                <div class="contenido_formulario">
+                    <input type="text" name="nombre" placeholder="Nombre:">
+                    <input type="email" name="correo" placeholder="Correo:">
+                    <input type="text" name="celular" placeholder="Telefono:">
+                    <textarea name="mensaje" id="" cols="10" rows="5" placeholder="Mensaje:"></textarea>
+                    <div>
+                        
+                        <a href="msj_envio.html" class="button boton-claro contacto_active">ENIVAR</a>
+                        <a href="index.html" class="square-button">Volver al Inicio</a>
+                    </div>
+                </div>
+                </form>
+                <div class="correo_enviado">
+                    <p>LISTO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contacto-->
+</section>
+<script>
+    // JavaScript
+    $(document).ready(function () {
+        $('.button').on('click', function () {
+            $('.contacto').css("margin-left", "60%");
+            $('.contacto').css("transition-property", "all");
+            $('.contacto').css("transition-duration", ".5s");
+            $('.contacto').css("transition-timing-function", "linear");
+            $('.contacto').css("transition-delay", ".2s");
+
+            $('.contenido_formulario').css("display", "none");
+            $('.contenido_formulario').css("transition-property", "all");
+            $('.contenido_formulario').css("transition-duration", "1s");
+            $('.contenido_formulario').css("transition-timing-function", "lineal");
+            $('.contenido_formulario').css("transition-delay", ".5s");
+
+            $('.correo_enviado').css("display", "block");
+            $('.correo_enviado').css("transition-property", "all");
+            $('.correo_enviado').css("transition-duration", "1s");
+            $('.correo_enviado').css("transition-timing-function", "lineal");
+            $('.correo_enviado').css("transition-delay", ".5s");
+
+            $('#envio_exitoso').css("visibility", "visible");
+            $('#envio_exitoso').css("opacity", "1");
+
+            $('#contactanos').css("visibility", "hidden");
+            $('#contactanos').css("opacity", "0");
+            $('#contactanos').css("transition-property", "visibility");
+            $('#contactanos').css("transition-duration", "0s");
+            $('#contactanos').css("transition-timing-function", "opacity");
+            $('#contactanos').css("transition-delay", "1.2s");
+        });
+    });
+
+    
+</script>
+
+<style>
+    body,
+    textarea,
+    input {
+        font-family: 'Righteous', cursive !important;
+    }
+
+    /*contacto*/
+    div.contenido_formulario {
+        margin-top: 30px;
+    }
+
+    div.fondo-contacto {
+        background-color: #001B31;
+        padding: 60px;
+        height: 550px;
+    }
+
+    div.pagina-contacto {
+        height: 650px;
+    }
+
+    div.pagina-contacto div.caja-contacto {
+        margin-top: 145px;
+    }
+
+    div.caja-contacto {
+        padding: 20px;
+        width: 70%;
+        height: 250px;
+        margin: 0 auto;
+        margin-top: 100px;
+        background: #004D7F;
+        box-shadow: 0px 3px 6px #0000004D;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    div.caja-contacto_responsivo {
+        display: none;
+    }
+
+    #contactanos_responsivo {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 40px;
+        color: white;
+        text-shadow: 5px 3px 6px black;
+    }
+
+    #contactanos {
+        font-size: 60px;
+        color: white;
+        float: right;
+        padding: 50px 100px 0 0;
+        text-shadow: 5px 3px 6px black;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.5s, opacity 1.2s ease-in-out;
+    }
+
+    #envio_exitoso {
+        font-size: 60px;
+        color: white;
+        float: left;
+        padding: 30px 0px 0 160px;
+        text-shadow: 5px 3px 6px black;
+        text-align: center;
+        line-height: 60px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 1.2s linear;
+    }
+
+    div.contacto {
+        position: absolute;
+        background-color: white;
+        width: 400px;
+        height: 420px;
+        padding: 30px;
+        border-radius: 7px;
+        margin-top: -100px;
+        margin-left: 100px;
+    }
+
+    div.contacto_responsivo {
+        background-color: white;
+        width: 80%;
+        height: 420px;
+        padding: 30px;
+        border-radius: 7px;
+        margin: 0 auto;
+    }
+
+    div.contacto div {
+        text-align: center;
+    }
+
+    div.contacto input[type="submit"] {
+        padding: 12px;
+        margin-top: 10px;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
+    div.correo_enviado {
+        display: none;
+    }
+
+    div.correo_enviado p {
+        font-size: 50px;
+        color: var(--azul-claro);
+        padding-top: 135px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 0px 10px 10px;
+    }
+
+    /*contacto*/
+    div.caja-contacto_responsivo h2.envio_exitoso_responsive {
+        color: white !important;
+        text-align: center;
+        font-weight: bold;
+        display: none;
+    }
+</style>

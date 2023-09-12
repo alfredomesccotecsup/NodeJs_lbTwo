@@ -1,0 +1,372 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Lobster&display=swap');
+
+    body {
+        margin: 0 auto;
+    }
+
+    .encabezado {
+
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        height: 30px;
+        padding: 5px;
+        gap: 50px;
+
+    }
+
+    #nombre-pagina {
+        color: white;
+        font-size: 30px;
+        font-family: 'Nerko One', cursive;
+        text-shadow:
+            1px 1px 2px black,
+            1px -1px 2px black,
+            -1px 1px 2px black,
+            -1px -1px 1px black;
+    }
+
+    #nombre-pagina2 {
+        color: #F012BE;
+        opacity: 80%;
+        font-size: 30px;
+        font-family: 'Nerko One', cursive;
+        text-shadow:
+            1px 1px 2px black,
+            1px -1px 2px black,
+            -1px 1px 2px black,
+            -1px -1px 1px black;
+    }
+
+    .botones {
+        border: 0px solid black;
+        background-color: transparent;
+        color: white;
+        border-radius: 15px;
+        padding: 4px;
+        transition-duration: 0.2s;
+        font-size: 20px;
+        font-family: 'Lobster', cursive;
+        text-shadow:
+            1px 1px 2px black,
+            1px -1px 2px black,
+            -1px 1px 2px black,
+            -1px -1px 1px black;
+    }
+
+    .botones:hover {
+        background-color: #0B0C0D;
+        padding-bottom: 32px;
+        color: white;
+    }
+
+    .contenido-principal {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 530px;
+        height: 95vh;
+        color: white;
+        font-family: 'Lobster', cursive;
+
+
+    }
+
+    .contenido-principal h3 {
+
+        margin: 0;
+        text-shadow:
+            2px 2px 2px black,
+            2px -2px 2px black,
+            -2px 2px 2px black,
+            -2px -2px 2px black;
+
+
+    }
+
+    .contenido-principal h2 {
+
+        text-shadow:
+            2px 2px 2px black,
+            2px -2px 2px black,
+            -2px 2px 2px black,
+            -2px -2px 2px black;
+
+    }
+
+    .co-pri {
+
+        display: flex;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        justify-content: center;
+    }
+
+    .co-pri img {
+
+        border-radius: 200px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+
+
+
+    .menu {
+
+
+        background-image: url("https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1669782111~exp=1669782711~hmac=ee9c2f70d7c4cb38efa47974be7c0e5cba4a5f074077dc2783c2dc970c0f8a86");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5px;
+        height: 100vh;
+    }
+
+
+    .sobre-mi {
+        display: flex;
+        gap: 72px;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .sobre-mi img {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    .sm-2 h3,
+    h4 {
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .sm-2 h4 {
+        font-size: 25px;
+        font-family: 'Comfortaa', cursive;
+
+    }
+
+    .sm-2 p {
+        font-size: 25px;
+        font-family: 'Comfortaa', cursive;
+
+    }
+
+    #titulo-sobre-mi {
+
+        font-size: 45px;
+        font-family: 'Nerko One', cursive;
+
+    }
+
+    .cn-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #titulo-conocimiento {
+        font-size: 45px;
+        font-family: 'Nerko One', cursive;
+
+
+
+    }
+
+    .cn-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 150px;
+
+    }
+
+    .cn-img2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 150px;
+
+    }
+
+    .conocimiento {
+        background-color: #DDDDDD;
+        height: 100vh;
+
+
+    }
+
+    .cn-3 {
+        display: flex;
+        justify-content: center;
+        margin-top: -15px;
+    }
+
+    .certificados {
+        margin-top: -30px;
+        display: flex;
+        background-color: #DDDDDD;
+        justify-content: center;
+
+    }
+
+    .slider-container {
+
+        display: flex;
+        width: 35%;
+        height: 400px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        align-items: center;
+    }
+
+    .slider-container img {
+        flex: 0 0 100%;
+        width: 0%;
+        object-fit: scale-down;
+        scroll-snap-align: center;
+    }
+
+    .square-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+</style>
+
+<body>
+
+    <div class="menu">
+
+        <div class="header">
+
+            <div class="encabezado">
+                <label id="nombre-pagina">Alfredo <label id="nombre-pagina2">Mescco</label>
+                    <a href="index.html" class="botones">
+                        <span class="back-to-home">Volver al Inicio🏠</span>
+                    </a>
+                    <a href="sobre_mi.html" class="botones">
+                        <span class="back-to-home">Sobre Mi 💻</span>
+                    </a>
+                    <a href="contactanos.html" class="botones">
+                        <span class="back-to-home">Contactame 📞</span>
+                    </a>
+
+            </div>
+        </div>
+
+        <div class="co-pri">
+
+            <div class="contenido-principal">
+                <h2>Alfredo Mescco</h2>
+                <h3>Front-End Developer <br>Game Developer</h3>
+            </div>
+            <div>
+                <img src="https://img.freepik.com/free-vector/gradient-coding-developers-logo_23-2148809440.jpg"
+                    width="300" height="300">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sobre-mi">
+
+        <div>
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-programacion_114360-1351.jpg"
+                width="450" height="400">
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 id="titulo-sobre-mi">Sobre mí</h3>
+                    <h4>Hola, soy Alfredo Mescco Quispe</h4>
+                    <p>Soy un estudiante apasionado de la carrera de Diseño y Desarrollo de Software, actualmente en el
+                        quinto semestre de mi formación. A mis 19 años, me encuentro inmerso en un emocionante viaje
+                        hacia la comprensión y la maestría en el mundo de la programación y la tecnología.</p>
+                    <p>Mi compromiso con la excelencia académica y mi profundo interés por la innovación tecnológica me
+                        han impulsado a explorar y aplicar una variedad de lenguajes de programación, metodologías de
+                        desarrollo y conceptos de diseño de software. Creo firmemente en que la tecnología es una
+                        poderosa herramienta para abordar desafíos complejos y mejorar la vida de las personas.</p>
+                    <p>Además de mi dedicación a la educación formal, busco constantemente oportunidades para expandir
+                        mis conocimientos y habilidades a través de proyectos personales y participación activa en
+                        comunidades de desarrollo. Mantenerme al tanto de las últimas tendencias y avances en el campo
+                        es una prioridad para mí.</p>
+                    <p>Mi objetivo es contribuir al mundo de la tecnología y el software con soluciones innovadoras y
+                        eficientes. Estoy emocionado por lo que el futuro tiene reservado y estoy decidido a aprovechar
+                        al máximo cada oportunidad para crecer como profesional y como persona.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="conocimiento">
+
+        <div class="cn-2">
+            <h3 id="titulo-conocimiento">Conocimiento</h3>
+        </div>
+
+        <div class="cn-img">
+            <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png" width="150"
+                height="150">
+            <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-file-html-css-styling-svg-wikimedia-commons-16.png"
+                width="150" height="150">
+            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"
+                width="150" height="150">
+            <img src="https://pic.onlinewebfonts.com/svg/img_252598.png" width="150" height="150">
+
+
+        </div>
+
+        <div class="cn-img2">
+            <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" width="150" height="150">
+        </div>
+
+
+        <div class="cn-3">
+            <h3 id="titulo-conocimiento">Certificaciones</h3>
+        </div>
+
+
+        <div class="certificados">
+            <div class="slider-container">
+                <img class="slider-item" src="recursos/certificado.png" alt="Certificado" />
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

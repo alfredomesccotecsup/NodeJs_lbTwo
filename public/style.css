@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* globales */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Utilidades */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+
+/* header */
+
+.header {
+  background-color: #118AB2;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__name {
+  font-weight: lighter;
+  color: #fff;
+}
+
+.header__lastname {
+  font-weight: bold;
+  color: #ffd166;
+}
+
+.header__nav--link {
+  display: inline-block;
+  padding: 1.5rem .5rem 1.5rem .5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  .header__nav--link {
+      padding: 1.5rem 3rem 1.5rem 3rem;
+  }
+}
+
+.header__nav--link:hover {
+  background-color: #06D6A0;
+  color: #ffd166;
+}
+
+@media (max-width: 900px) {
+  .header__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .header__title {
+      margin-top: 2rem;
+  }
+  .header__nav--link {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+}
+
+
+
+.welcome {
+  background-image: url(https://www.hipervinculos.cl/wp-content/uploads/2019/08/shutterstock_1095220634.jpg);
+  margin-top: 3.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .welcome {
+      margin-top: 7rem;
+  }
+}
+
+.welcome__container {
+  background-color: #06D6A0;
+  opacity: .8;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  z-index: 1;
+}
+
+.welcome__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.welcome__info {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+/* projects */
+
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.projects__title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: #073B4C;
+}
+
+@media (min-width: 800px) {
+  .projects__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2rem;
+  }
+}
+
+.card {
+  background-color: #073B4C;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.card__title {
+  color: #FFF;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card__boton {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  padding: .5rem;
+  margin-top: 2rem;
+  background-color: #E5625E;
+  border-radius: 5px;
+}
+
+
+
+.contacto {
+  text-align: center;
+}
+
+.contacto__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #073B4C;
+}
+
+.contacto__title02 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #fd0000;
+}
+
+@media (min-width: 800px) {
+  .iconos__container {
+      display: flex;
+      justify-content: center;
+  }
+}
+
+.iconos__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.iconos__link:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.footer {
+  margin-top: 2rem;
+  background-color: #118AB2;
+}
+
+.footer_contac {
+  margin-top: 2rem;
+  background-color: #00357a;
+}
+
+.footer p {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
